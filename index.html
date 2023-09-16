@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Dashboard</title>
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jumbotron container-fluid mt-2 text-center pt-1 bg-dark text-white">
+        <h1><strong>Weekly Weather App!</strong></h1>
+    </div>
+    <div class="container">
+        <!--Look up City-->
+        <div class="col-sm-4 mx-auto pb-2">
+            <!--This is the prompt box for entering city names-->
+            <h4 class="pt-1">Enter City Name:</h4>
+            <!--The text box to capture city names-->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control bg-dark text-white"id="search-city" aria-label="City Search" aria-describedby="search-button">
+                <div class="input-group-append">
+                    <button class=" btn bg-white text-dark" id="search-button"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <!--Search through cities previously looked up-->
+            <button class=" btn btn-dark" type="button" id="clear-history">CLEAR</button>
+            <ul class="list-group">
+
+            </ul>
+        </div>
+
+        <div class="col-sm-8 mb-3">
+            <!--Future weather forcast-->
+            <div class="row ml-2">
+                <div class="col-sm-12" id="current">
+                    <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                    <p>Temperature:<span class="" id="temperature"></span></p>
+                    <p>Humidity:<span class="" id="humidity"></span></p> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12" id ="future">
+            <h3 class="text-center">5-Day Forecast:</h3>
+            <div class="row text-light">
+                <div class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 p-2 mt-2" >
+                    <p id="fDate0"></p>
+                    <p id="fImg0"></p>
+                    <p>Temp:<span id="fTemp0"></span></p>
+                    <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+                <div class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 p-2 mt-2" >
+                    <p id="fDate1"></p>
+                    <p id="fImg1"></p>
+                    <p>Temp:<span id="fTemp1"></span></p>
+                    <p>Humidity:<span id="fHumidity1"></span></p>
+                </div>
+                <div class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 p-2 mt-2">
+                    <p id="fDate2"></p>
+                    <p id="fImg2"></p>
+                    <p>Temp:<span id="fTemp2"></span></p>
+                    <p>Humidity:<span id="fHumidity2"></span></p>
+                </div>
+                <div class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 p-2 mt-2">
+                    <p id="fDate3"></p>
+                    <p id="fImg3"></p>
+                    <p>Temp:<span id="fTemp3"></span></p>
+                    <p>Humidity:<span id="fHumidity3"></span></p>
+                </div>
+                <div class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 p-2 mt-2" >
+                    <p id="fDate4"></p>
+                    <p id="fImg4"></p>
+                    <p>Temp:<span id="fTemp4"></span></p>
+                    <p>Humidity:<span id="fHumidity4"></span></p>
+                </div>
+            </div>
+    </div>
+    
+</body>
+<!--JQuery Link-->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script src="assets/script.js"></script>
+</html>

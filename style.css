@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.forecast {
+    font-size: large;
+}
